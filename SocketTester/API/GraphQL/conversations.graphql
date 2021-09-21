@@ -1,0 +1,15 @@
+mutation SubscriptionTestTrigger {
+  subscriptionTest {
+    ...TestPayloadFragment
+  }
+}
+
+subscription SubscriptionTest {
+  subscriptionTest {
+    ...TestPayloadFragment
+  }
+}
+
+fragment TestPayloadFragment on TestPayload {
+    message
+}
